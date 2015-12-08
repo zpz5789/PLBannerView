@@ -290,7 +290,11 @@
                          [self scrollViewDidEndDecelerating:self];
                      }];
 }
-
+- (void)dealloc
+{
+    [_autoScrollTimer invalidate];
+    _autoScrollTimer = nil;
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
