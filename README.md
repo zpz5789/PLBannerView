@@ -1,6 +1,7 @@
 轻量级图片轮播器，支持本地和网络两种方式，可以设置标题，配置样式等。
-使用仿官方UITableView
-- (void)viewDidLoad {
+使用仿官方`UITableView`
+
+```  - (void)viewDidLoad {
     [super viewDidLoad];
     //IB创建
     _dataSource1 = @[@"0.jpg",@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg"];
@@ -59,3 +60,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+```
